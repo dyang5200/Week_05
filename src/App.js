@@ -18,6 +18,7 @@ class App extends Component {
         <h1> How to make boba at home</h1>
         {this.state.todos.map(todo => (
           <li key={todo}> {todo}</li>
+	  <textarea value={this.state.value} onChange={this.state.todo}
         ))}
       </div>
     );
